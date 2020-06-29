@@ -110,7 +110,7 @@ function ValidatorGetValueRecursive(control)
     }
     return "";
 }
-function Page_ClientValidate(validationGroup) {
+function Page_Moto_1Validate(validationGroup) {
     Page_InvalidControlToBeFocused = null;
     if (typeof(Page_Validators) == "undefined") {
         return true;

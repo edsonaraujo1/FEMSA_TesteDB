@@ -79,7 +79,7 @@
                         Style="font-family: 'Trebuchet MS'" class="btn btn-primary" OnClick="LinkButton3_Click">Deletar</asp:LinkButton>
 
                     <asp:LinkButton ID="LinkButton4" runat="server"
-                        Style="font-family: 'Trebuchet MS'" class="btn btn-primary" OnClick="LinkButton4_Click">Cancelar</asp:LinkButton>
+                        Style="font-family: 'Trebuchet MS'" class="btn btn-primary" OnClick="LinkButton4_Click">Limpar</asp:LinkButton>
 
                     <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Default.aspx"
                         Style="font-family: 'Trebuchet MS'" class="btn btn-primary">Sair</asp:LinkButton>

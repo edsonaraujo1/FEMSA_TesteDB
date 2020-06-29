@@ -6564,11 +6564,11 @@ jQuery.each( [ "height", "width" ], function( i, dimension ) {
 
 					// Support: Safari 8+
 					// Table columns in Safari have non-zero offsetWidth & zero
-					// getBoundingClientRect().width unless display is changed.
+					// getBoundingMoto_1Rect().width unless display is changed.
 					// Support: IE <=11 only
-					// Running getBoundingClientRect on a disconnected node
+					// Running getBoundingMoto_1Rect on a disconnected node
 					// in IE throws an error.
-					( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+					( !elem.getMoto_1Rects().length || !elem.getBoundingMoto_1Rect().width ) ?
 						swap( elem, cssShow, function() {
 							return getWidthOrHeight( elem, dimension, extra );
 						} ) :
@@ -6616,9 +6616,9 @@ jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
 	function( elem, computed ) {
 		if ( computed ) {
 			return ( parseFloat( curCSS( elem, "marginLeft" ) ) ||
-				elem.getBoundingClientRect().left -
+				elem.getBoundingMoto_1Rect().left -
 					swap( elem, { marginLeft: 0 }, function() {
-						return elem.getBoundingClientRect().left;
+						return elem.getBoundingMoto_1Rect().left;
 					} )
 				) + "px";
 		}
@@ -7776,7 +7776,7 @@ jQuery.expr.pseudos.hidden = function( elem ) {
 	return !jQuery.expr.pseudos.visible( elem );
 };
 jQuery.expr.pseudos.visible = function( elem ) {
-	return !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+	return !!( elem.offsetWidth || elem.offsetHeight || elem.getMoto_1Rects().length );
 };
 
 
@@ -7920,14 +7920,14 @@ jQuery.fn.extend( {
 
 		// Return zeros for disconnected and hidden (display: none) elements (gh-2310)
 		// Support: IE <=11 only
-		// Running getBoundingClientRect on a
+		// Running getBoundingMoto_1Rect on a
 		// disconnected node in IE throws an error
-		if ( !elem.getClientRects().length ) {
+		if ( !elem.getMoto_1Rects().length ) {
 			return { top: 0, left: 0 };
 		}
 
 		// Get document-relative position by adding viewport scroll to viewport-relative gBCR
-		rect = elem.getBoundingClientRect();
+		rect = elem.getBoundingMoto_1Rect();
 		win = elem.ownerDocument.defaultView;
 		return {
 			top: rect.top + win.pageYOffset,
@@ -7949,8 +7949,8 @@ jQuery.fn.extend( {
 		// position:fixed elements are offset from the viewport, which itself always has zero offset
 		if ( jQuery.css( elem, "position" ) === "fixed" ) {
 
-			// Assume position:fixed implies availability of getBoundingClientRect
-			offset = elem.getBoundingClientRect();
+			// Assume position:fixed implies availability of getBoundingMoto_1Rect
+			offset = elem.getBoundingMoto_1Rect();
 
 		} else {
 			offset = this.offset();

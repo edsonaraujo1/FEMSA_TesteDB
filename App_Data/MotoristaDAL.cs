@@ -23,6 +23,7 @@ public class MotoristaDAL
   }
   public static Moto_Model GetMotorista(int codigo)
   {
+    
     SqlConnection con = new SqlConnection(AcessoDB.ConnectionString);
     try
     {

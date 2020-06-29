@@ -58,7 +58,7 @@ namespace AppTeste
       LinkButton1.Visible = true;      // Incluir
       LinkButton2.Visible = false;     // Alterar
       LinkButton3.Visible = false;     // Excluir
-      LinkButton4.Visible = false;     // Cancelar
+      LinkButton4.Visible = true;     // Cancelar
       LinkButton5.Visible = true;      // Sair
 
       GridView1.DataSource = MotoristaDAL.GetMotoristas();
