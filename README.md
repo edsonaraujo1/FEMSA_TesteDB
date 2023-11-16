@@ -1,14 +1,15 @@
 # FEMSA_TesteDB
 Cadastro de Motorista usando ASP.NET C# e Crud em Procedure SQL<br>
 
-Para criação das Tabelas e procedures executar script TesteDB.sql<br>
+Para criaÃ§Ã£o das Tabelas e procedures executar script TesteDB.sql<br>
 
-Apos rodar o script TesteDB.sql entre com as configurações:<br>
+Apos rodar o script TesteDB.sql entre com as configuraÃ§Ãµes:<br>
 
 Configura o banco de dados no arquivo Web.config, conforme seu banco:<br>
 
+```
 <connectionStrings>
-    <add name="FEMSA" connectionString="DefaultConnection": "Data Source = localhost; Initial Catalog = Seguro; Uid = sa; Password = 1234; MultipleActiveResultSets=true; Pooling=true; Min Pool Size=0; Max Pool Size=250; Connect Timeout=30;" providerName="System.Data.SqlClient" />
+    <add name="FEMSA" connectionString="DefaultConnection": "Data Source = localhost; Initial Catalog = Seguro; Uid = sa; Password = 1234; MultipleActiveResultSets=true; Pooling=true; Min Pool Size=0; Max Pool Size=250; Connect Timeout=30;" providerName="System.Data.SqlClient" />      
 </connectionStrings>
-
+```
 
