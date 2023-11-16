@@ -1,4 +1,4 @@
-USE [dbTest]
+USE [DBTeste]
 GO
 /****** Object:  Table [dbo].[Motorista]    Script Date: 29/06/2020 10:01:00 ******/
 SET ANSI_NULLS ON
